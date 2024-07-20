@@ -1,0 +1,6 @@
+// Файлы указаний помогают среде IDE Visual Studio интерпретировать идентификаторы Visual C++
+// (например, имена функций и макросов).
+// Дополнительные сведения: https://go.microsoft.com/fwlink/?linkid=865984
+#define PyAPI_FUNC(RTYPE) __declspec(dllexport) RTYPE
+#define PyAPI_FUNC(RTYPE) __declspec(dllimport) RTYPE
+#define PyAPI_FUNC(RTYPE)
